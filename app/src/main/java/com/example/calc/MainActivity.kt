@@ -32,6 +32,7 @@ class MainActivity : AppCompatActivity() {
         tilsecondNum =findViewById(R.id.tilsecondNum)
         etsecondNum = findViewById(R.id.etsecondNum)
         btnadd =findViewById(R.id.btnadd)
+        btnsubtract = findViewById(R.id.btnsubtract)
         btnMultiply= findViewById(R.id.btnmultiply)
         btndivide = findViewById(R.id.btndivide)
         btnresult = findViewById(R.id.btnResult)
@@ -50,7 +51,7 @@ class MainActivity : AppCompatActivity() {
             var  output = numone *numtwo
             btnresult.text = output.toString()
         }
-        btnsubtract.setOnClickListener {
+         btnsubtract.setOnClickListener {
             var numone = etfirstNum.text.toString().toInt()
             var numtwo = etsecondNum.text.toString().toInt()
             var  output = numone - numtwo
